@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/etId" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ID:" />
+    <EditText android:id="@+id/etFullName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Full Name:" />
+    <CheckBox android:id="@+id/cbManager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Is A Manager" />
+    <Button android:id="@+id/btnAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ADD" />
+
+    <ListView
+        android:id="@+id/lvEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"/>
+
+    <include layout="@layout/navigation_btn" />
+
+</LinearLayout>
